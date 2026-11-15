@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="dsh-badge">
+  <rect x="4" y="4" width="120" height="120" rx="26" fill="#191B20"/>
+  <rect x="4" y="4" width="120" height="120" rx="26" fill="none" stroke="#00D4FF" stroke-opacity="0.45" stroke-width="3"/>
+  <circle cx="34" cy="46" r="7" fill="#00D4FF"/>
+  <rect x="50" y="40" width="52" height="12" rx="6" fill="#F2F4F8"/>
+  <rect x="50" y="62" width="36" height="8" rx="4" fill="#8A94A6"/>
+  <rect x="24" y="86" width="80" height="6" rx="3" fill="#2B3038"/>
+  <rect x="24" y="86" width="46" height="6" rx="3" fill="#00D4FF"/>
+</svg>

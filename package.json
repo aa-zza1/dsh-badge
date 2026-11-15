@@ -1,0 +1,39 @@
+{
+  "name": "dsh-badge",
+  "version": "2.1.0",
+  "description": "给桌面 agent 用的「正在操作」状态角标 / An always-on-top status badge for desktop agents on Windows",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "dsh-badge.ps1",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "agent",
+    "badge",
+    "windows",
+    "powershell",
+    "wpf"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  }
+}

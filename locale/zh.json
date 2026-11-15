@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "操作角标",
+    "description": "agent 操作桌面时在屏幕角落显示状态角标：正在做什么、进行到第几步、可点取消。提供 badge_show / badge_update / badge_hide / badge_cancelled 四个工具。"
+  }
+}

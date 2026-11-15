@@ -35,6 +35,25 @@ powershell -ExecutionPolicy Bypass -File .\dsh-badge.ps1 -Heartbeat "$env:TEMP\d
 powershell -ExecutionPolicy Bypass -File .\dsh-badge.ps1 -Stop
 ```
 
+## 装成 DSH 插件（推荐）
+
+仓库同时是一个 DSH bundle，装进 profile 后会多出四个工具，agent 用工具就能控制角标：
+
+```powershell
+dsh plugin --profile desktop add github:aa-zza1/dsh-badge
+```
+
+| 工具 | 作用 |
+| --- | --- |
+| `badge_show` | 显示角标。参数 `title` 必填，另有 `detail` / `step` / `total` / `seconds` / `anchor` / `monitor` / `opacity` / `accent` / `lang` / `clickable` |
+| `badge_update` | 改标题、说明、进度、状态色（`busy` / `waiting` / `error` / `done`），不重启角标 |
+| `badge_cancelled` | 查用户有没有点 ×（只有 `clickable: true` 时才有意义） |
+| `badge_hide` | 收起角标 |
+
+典型对话里 agent 会这么用：开始操作前 `badge_show`，每完成一步 `badge_update`，结束后 `badge_hide`。
+
+不装插件也能用，下面就是直接跑脚本的方式。
+
 ## 状态文件（多步任务用这个）
 
 角标每 400ms 轮询一次状态文件，随便覆写，立即生效：

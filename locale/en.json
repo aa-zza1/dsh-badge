@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "dsh-badge",
+    "description": "Shows an always-on-top status badge while the agent drives the desktop: what it is doing, which step it is on, and a cancel button. Tools: badge_show / badge_update / badge_hide / badge_cancelled."
+  }
+}
