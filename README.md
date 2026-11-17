@@ -4,6 +4,8 @@
 
 ![效果](docs/demo.png)
 
+已收录进 DSH 插件市场：[awesome-dsh-plugin · dsh-badge](https://awesome-dsh-plugin.com/p/aa-zza1/dsh-badge/)（分类 notify）
+
 ## 为什么需要
 
 agent 操作桌面时，鼠标会自己动、窗口会自己弹。人看不见提示，就会以为卡死了、或者以为已经做完了，然后去打断它。
@@ -125,6 +127,10 @@ A tiny always-on-top status badge for desktop agents on Windows. It tells the pe
 - Optional cancel button that writes a marker file the agent can poll
 
 Requirements: Windows 10/11, Windows PowerShell 5.1 (WPF). MIT licensed.
+
+## Listed in
+
+[awesome-dsh-plugin](https://awesome-dsh-plugin.com/p/aa-zza1/dsh-badge/) — category `notify`.
 
 ## License
 
